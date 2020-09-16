@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 10rem;
+}
+
+h1.title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.container {
+  background-color: #f6c447;
+  color: white;
+  width: 50%;
+  height: auto;
+  min-height: 500px;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.optionsMenu {
+  background-color: #eba341;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.toggleSwitch {
+  width: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3rem;
+}
+
+.toggleSwitch > p {
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3rem;
+  background-color: #f5f6fa;
+  border-radius: 3rem;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background-color: #eba341;
+  top: 5px;
+  left: 6px;
+  transition: all 0.3s;
+}
+
+.checkbox:checked + .switch::after {
+  left: 3.2rem;
+}
+
+.checkbox {
+  display: none;
+}

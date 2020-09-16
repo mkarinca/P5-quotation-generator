@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Quotation Generator</title>
   </head>
@@ -11,10 +15,19 @@
     <header>
       <h1 class="title">Quotes Generator</h1>
     </header>
-
     <div class="container">
-      <div class="top"></div>
-      <div class="middle"></div>
+      <div class="optionsMenu">
+        <div class="toggleSwitch">
+          <p>HUMAN</p>
+          <input type="checkbox" id="toggle" class="checkbox" />
+          <label for="toggle" class="switch"></label>
+          <p>ANIMALS</p>
+        </div>
+
+        <div class="counter"></div>
+        <button>GENERATE</button>
+      </div>
+      <div class="quoteBox"></div>
     </div>
 
     <script src="./js/app.js" type="text/js"></script>
