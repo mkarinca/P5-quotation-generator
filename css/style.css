@@ -39,6 +39,7 @@ h1.title {
   height: 7rem;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .toggleSwitch {
@@ -46,7 +47,6 @@ h1.title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 3rem;
 }
 
 .toggleSwitch > p {
@@ -61,6 +61,7 @@ h1.title {
   height: 3rem;
   background-color: #f5f6fa;
   border-radius: 3rem;
+  cursor: pointer;
 }
 
 .switch::after {
@@ -81,4 +82,58 @@ h1.title {
 
 .checkbox {
   display: none;
+}
+
+.counter {
+  background-color: #f6c447;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  background-color: #eba341;
+  width: 1.7rem;
+  height: 2.8rem;
+  border: none;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+button#addBtn,
+button#subtractBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  width: 1.9rem;
+  height: 3rem;
+  color: white;
+}
+
+button#generateBtn {
+  background-color: white;
+  color: #eba341;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border: ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
