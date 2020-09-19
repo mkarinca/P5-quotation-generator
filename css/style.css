@@ -20,26 +20,27 @@ header {
 h1.title {
   font-size: 3.5rem;
   font-weight: 400;
-  letter-spacing: 0.2rem;
 }
 
 .container {
   background-color: #f6c447;
   color: white;
-  width: 50%;
+  width: 45%;
   height: auto;
   min-height: 500px;
   border-radius: 1rem;
   margin-top: 1.5rem;
   overflow: hidden;
+  box-shadow: 0 5px 25px rgba(34, 60, 47, 0.15);
 }
 
 .optionsMenu {
   background-color: #eba341;
   height: 7rem;
+  padding: 2.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .toggleSwitch {
@@ -92,14 +93,14 @@ h1.title {
   justify-content: center;
 }
 
-input[type="number"] {
+input {
   background-color: #eba341;
   width: 1.7rem;
   height: 2.8rem;
   border: none;
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 button#addBtn,
@@ -127,9 +128,12 @@ button:focus {
   outline: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 button:hover {
   cursor: pointer;
-  border: ;
 }
 
 input::-webkit-outer-spin-button,
